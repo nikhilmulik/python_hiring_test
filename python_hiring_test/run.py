@@ -68,7 +68,6 @@ def write_csv(result):
 
 
 def main():
-    # import pdb; pdb.set_trace()
     csv_data = read_csv_file()
     concated_data = pd.concat([pitcher(csv_data), hitter(csv_data)], axis=0, ignore_index=True)
     data_frame = calculation(concated_data)
